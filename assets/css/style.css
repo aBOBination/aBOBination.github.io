@@ -1,0 +1,179 @@
+.nav-container {
+    text-align: center;
+    background-color: #ffffff;
+    height: 75px;
+    border-bottom: 2px solid #cccccc;
+
+}
+
+.nav {
+    background-color: #ffffff;
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.nav-logo {
+    float: left;
+    background-color: #4aaaa5;
+    height: 100%;
+    margin: auto;
+}
+
+.nav-logo-link {
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 75px;
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.nav-right {
+    background-color: #ffffff;
+    float: right;
+    height: 100%;
+    margin: auto;
+}
+
+.divider {
+    color: #777777;
+    opacity: 20%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.nav-link {
+    color: #777777;
+    box-sizing:border-box;
+    height: 100%;
+    width: 100%;
+    line-height:75px;
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.about-me-container {
+    background-image: url("../images/concrete_seamless.png");
+    top: 77px; /* Header Height */
+    width: 100%;
+    text-align: center;
+    min-height: calc(100vh - 135px);
+}
+
+.about-me {
+    text-align: left;
+    background-color: #ffffff;
+    max-width: 920px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    display: inline-block;
+    border: 1px solid #dddddd ;
+}
+
+.about-name {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: x-large;
+    color: #4aaaa5;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.about-image {
+    height: 200px;
+    width: 200px;
+    float: left;
+    padding-right: 20px;
+}
+
+.about-paragraph {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    line-height: 30px;
+
+}
+
+
+.footer {
+    background-color: #666666;
+    color: #ffffff;
+    font-size: small;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: solid #4aaaa5 8px;
+}
+
+.form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+.form-name-area {
+    width: 100%;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+}
+
+.form-email-area {
+    width: 100%;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+}
+
+.form-message-area {
+    width: 100%;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+}
+
+.form-button {
+    background-color:#4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.image-container {
+    margin: 25px;
+    position: relative;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+}
+
+.portfolio-images {
+    width: 100%;
+
+}
+.banner {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: x-large;
+    position: absolute;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    bottom: 20px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+}
+
+.copy {
+    padding-top: 30px;
+
+}
