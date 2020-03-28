@@ -1,9 +1,14 @@
 
 .json-wrapper {
-    background-color: #618685;
+    background-color: #3b3b3b;
+
 }
 
 .json {
     font-family: 'Roboto Mono', monospace;
-    color: #f18973;
+    font-size: x-small;
+    font-weight: bold;
+    color: #db6439;
+    line-height: 2rem;
+    margin: 0;
 }
