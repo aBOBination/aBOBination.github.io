@@ -4,10 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Fonts -->
-
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet" />
+        <!-- Icons -->
+        <link rel="shortcut icon" href="assets/images/me320.png" />
         <!-- Style Sheets -->
-
         <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -15,33 +15,48 @@
         <title>Robert Marks</title>
     </head>
     <body>
-        <section class="s1-top">
-            <div class="s1-welcome">
-                <div class="container p-2 mx-auto json-wrapper">
-                    <p class="json">
-                        &#123; &nbsp;
-                    </p>
-                    <p class="json">&nbsp; &nbsp; "name": "robert marks",</p>
-                    <p class="json">&nbsp; &nbsp; "email": "robert.marks54@gmail.com"</p>
-                    <p class="json">&nbsp; &nbsp; "occupation": "full-stack developer"</p>
-                    <p class="json">&#125;</p>
+        <div class="main-container container-fluid m-0 p-0 h-100">
+            <div id="welcome" class="welcome row h-100 m-0">
+                <!-- particles.js container -->
+                <div id="particles-js"></div>
+                <div class="d-flex align-items-center name-container col-6 container-fluid text-center">
+                    <h2 class="mx-auto text-center">Hello, I am <span class="name">Robert Mark</span> and I am a Full-Stack Developer.</h2>
                 </div>
             </div>
-        </section>
-        <section class="s2-nav">s2-nav</section>
-        <section class="s3-portfolio">s3-portfolio</section>
-        <section class="s4-contact">
-            <div class="json-wrapper">
-                <p class="json">
-                    &#123; &nbsp;
-                </p>
-                <p class="json">&nbsp; &nbsp; "Name": "Robert Marks",</p>
-                <p class="json">&nbsp; &nbsp; "Email": "robert.marks54@gmail.com"</p>
-                <p class="json">&nbsp; &nbsp; "Occupation": "Full-stack developer"</p>
-                <p class="json">&nbsp; &nbsp; "Skills": ["Java Script", "Python"]</p>
-                <p class="json">&#125;</p>
+            <div id="about-me" class="about-me row container-fluid h-100 m-0">
+                <div class="col-6 container-fluid text-center mt-5">
+                    <div class="mx-auto text-center">
+                        <h2 class="mb-5">About Me</h2>
+                        <img src="assets/images/me320.png" class="img-circle" />
+                        <h4 class="mt-5">I am a full-stack developer living in Salt Lake City, Utah.</h4>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="s5-footer">s5-footer</section>
+            <div id="projects" class="projects row container-fluid h-100 m-0">
+                <div class="col-6 container-fluid text-center mt-5">
+                    <div class="mx-auto text-center">
+                        <h2 class="mb-5">About Me</h2>
+                        <img src="assets/images/me320.png" class="img-circle" />
+                        <h4 class="mt-5">I am a full-stack developer living in Salt Lake City, Utah.</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="contact row container-fluid h-50 m-0">
+                <div class="col-6 container-fluid text-center mt-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/javascript/particles.js"></script>
 </html>
