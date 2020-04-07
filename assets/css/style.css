@@ -40,7 +40,11 @@ img {
 .projects {
     background-color: #f5f5f5;
 }
+.project-item {
 
+    background-color: tomato;
+    border: solid 1px gray;
+}
 /* ---- Contact Section ---- */
 .contact {
     background-color: #ffffff;
