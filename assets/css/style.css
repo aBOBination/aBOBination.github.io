@@ -14,6 +14,9 @@ body {
     /* background-color: #1A242E; */
     color: #ffffff;
 }
+.welcome-p {
+    text-align: justify;
+}
 .name {
     /* color: #388D3D; */
     color: tomato;
