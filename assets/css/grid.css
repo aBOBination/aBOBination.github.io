@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Mitr', sans-serif;
+    display: grid;
+    grid-template-rows:  100vh 5em 100vh 100vh 100vh auto;
+    grid-template-columns: auto ;
+    grid-template-areas:
+        "hero"
+        "header"
+        "about"
+        "projects"
+        "contact"
+        "footer";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    line-height: auto;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    color: #fff;
+    padding: 15px
+}
+
+header {
+    grid-area: header;
+    background-color: #41c7c7;
+    display: grid;
+    align-content: center;
+}
+
+#hero {
+    grid-area: hero;
+}
+
+#acount {
+    grid-area: about;
+}
+
+#projects {
+    grid-area: projects;
+    background-color: #f7f7f7;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f7f7f7;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1A242E;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.sticky {
+    height: 5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
