@@ -3,69 +3,59 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet" />
+        <!-- Icons -->
+        <link rel="shortcut icon" href="assets/images/me320.png" />
+        <!-- Style Sheets -->
         <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/grid.css" type="text/css" />
+
 
         <title>Robert Marks</title>
     </head>
     <body>
-        <!-- Nav Bar -->
-        <header class="nav-container">
-            <nav class="nav">
-                <div class="nav-logo">
-                    <a class="nav-logo-link" href="index.html" target="">Robert Marks</a>
-                </div>
-                <div class="nav-right">
-                    <a class="nav-link" href="index.html" target="">About </a>
-                    <span class="divider">|</span>
-                    <a class="nav-link" href="portfolio.html" target="">Portfolio</a>
-                    <span class="divider">|</span>
-                    <a class="nav-link" href="contact.html" target="">Contact</a>
-                </div>
+        <header class="header" id="myHeader">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Abount</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
         </header>
-        <!-- About Me Section -->
-        <div class="about-me-container">
-            <div class="about-me">
-                <h1 class="about-name">Abount Me</h1>
-                <br />
-                <img class="about-image" src="assets/images/Marks_Bobby.jpg" alt="" />
-                <p class="about-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
-                </p>
-                <br />
-                <p class="about-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
-                </p>
-                <br />
-                <p class="about-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
-                </p>
-                <br />
-                <p class="about-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
-                </p>
-            </div>
+
+        <div id="hero">
+            <div id="particles-js"></div>
+            <h1>Robert Marks</h1>
         </div>
-        <!-- Footer -->
-        <div class="footer">
-            <p class="copy">Copyright &copy</p>
-        </div>
+        <div id="about" class="content">About</div>
+        <div id="projects">Projects</div>
+        <div id="contact">Contact</div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
     </body>
+
+    <script>
+        window.onscroll = function () {
+            myFunction();
+        };
+
+        var header = document.getElementById('myHeader');
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        }
+    </script>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/javascript/particles.js"></script>
 </html>
