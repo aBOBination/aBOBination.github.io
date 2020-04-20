@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: 'Mitr', sans-serif;
     display: grid;
-    grid-template-rows:  100vh 5em 100vh 100vh 100vh auto;
+    grid-template-rows:  100vh 5vh 85vh 85vh 85vh 10vh;
     grid-template-columns: auto ;
     grid-template-areas:
         "hero"
@@ -47,8 +47,24 @@ header {
     grid-area: hero;
 }
 
-#acount {
+#about {
     grid-area: about;
+    display: grid;
+    grid-template-rows:  30%;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "about-title"
+        "about-content ";
+
+}
+
+#about-title {
+    grid-area: about-title;
+    background-color: lightgray;
+}
+
+#about-content {
+    grid-area: about-content;
 }
 
 #projects {
@@ -65,20 +81,25 @@ footer {
     background-color: #f7f7f7;
 }
 
+/* Particles */
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #1A242E;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-
+/* Sticky Header */
 .sticky {
-    height: 5em;
-    position: fixed;
+    height: 5vh;
+    position: sticky;
     top: 0;
     width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 50px;
   }
