@@ -4,8 +4,8 @@ body {
     margin: 0;
     font-family: 'Source Code Pro', monospace;
     display: grid;
-    grid-template-rows:  100vh 5vh 85vh 85vh 85vh 10vh;
-    grid-template-columns: 50% 50%;
+    grid-template-rows:  100vh 5vh 95vh 95vh 85vh 10vh;
+    grid-template-columns: 100%;
     grid-template-areas:
         "hero hero"
         "header header"
@@ -23,8 +23,6 @@ ul {
     list-style-type: none;
     text-align: center;
     margin: auto;
-    padding: auto;
-    line-height: auto;
 }
 
 ul li {
@@ -34,6 +32,11 @@ ul li {
 ul li a {
     color: #fff;
     padding: 15px
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: tomato;
 }
 
 header {
@@ -50,30 +53,44 @@ header {
 #about {
     grid-area: about;
     display: grid;
-    grid-template-rows:  30%;
-    grid-template-columns: auto;
+    grid-template-rows:  10em auto;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
-        "about-title"
-        "about-content ";
-
+        "about-title about-title"
+        "about-content about-skills";
+    background-color: #cecece;
+    padding: 5rem;
 }
 
 #about-title {
     grid-area: about-title;
-    background-color: lightgray;
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
 }
 
 #about-content {
     grid-area: about-content;
+    text-align: center;
+}
+
+#about-content p {
+    text-align: left;
+}
+
+#about-skills {
+    grid-area: about-skills;
+    text-align: center;
 }
 
 #projects {
     grid-area: projects;
-    background-color: #f7f7f7;
+
 }
 
 #contact {
     grid-area: contact;
+    background-color: #cecece;
 }
 
 footer {

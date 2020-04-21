@@ -6,7 +6,7 @@ particlesJS("particles-js", {
         opacity: { value: 1, random: true, anim: { enable: true, speed: 1, opacity_min: 0, sync: false } },
         size: { value: 3, random: true, anim: { enable: false, speed: 4, size_min: 0.3, sync: false } },
         line_linked: { enable: false, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 1, direction: "none", random: true, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 600 } },
+        move: { enable: true, speed: 3, direction: "bottom-right", random: true, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 600 } },
     },
     interactivity: {
         detect_on: "canvas",
