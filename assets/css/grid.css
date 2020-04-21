@@ -2,17 +2,17 @@
 
 body {
     margin: 0;
-    font-family: 'Mitr', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     display: grid;
     grid-template-rows:  100vh 5vh 85vh 85vh 85vh 10vh;
-    grid-template-columns: auto ;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
-        "hero"
-        "header"
-        "about"
-        "projects"
-        "contact"
-        "footer";
+        "hero hero"
+        "header header"
+        "about skills"
+        "projects projects"
+        "contact contact"
+        "footer footer";
 }
 
 a {
