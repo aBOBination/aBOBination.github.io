@@ -159,14 +159,47 @@ header {
     grid-template-areas:
         "projects-title projects-title"
         "projects-content projects-content";
+    text-align: center;
+
 }
 
 #projects-title {
     grid-area: projects-title;
+    text-align: center;
+    margin: auto;
+}
+
+#projects-title h1 {
+    font-weight: 700;
+    border-bottom: 2px solid #1A242E;
 }
 
 #projects-content {
     grid-area: projects-content;
+    display: grid;
+    grid-template-rows:  auto;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+        "p1 p2"
+        "p3 p4"
+        "p5 P5";
+    grid-gap: 3em;
+    padding: 3em;
+}
+
+#projects-content div {
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #1A242E;
+    box-shadow: 10px 10px 8px #888888;
+
+}
+
+#projects-content div img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 #contact {
@@ -265,6 +298,22 @@ footer {
 
     #projects {
         background-color: #cecece;
+    }
+
+
+    #projects-content {
+        grid-area: projects-content;
+        display: grid;
+        grid-template-rows:  auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "p1"
+            "p2"
+            "p3"
+            "p4"
+            "p5";
+        grid-gap: 0;
+        padding: 0;
     }
 
     #contact {
