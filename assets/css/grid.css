@@ -248,7 +248,8 @@ footer {
     #about-skills {
         background-color: #f7f7f7;
         width: auto;
-        padding : 3em 2em;
+        padding : 2em 2em;
+        margin: 0;
     }
 
     #projects {
