@@ -73,7 +73,7 @@ header {
     z-index: 100;
 }
 
-.nav-text {
+.title-text {
     display: inline;
     color: white;
 }
@@ -179,11 +179,6 @@ footer {
     background-position: center;
 }
 
-.particles-js-canvas-el {
-    height: 50%;
-    width: 100%;
-}
-
 /* Sticky Header */
 .sticky {
     height: 5vh;
@@ -196,9 +191,19 @@ footer {
     padding-top: 50px;
 }
 
+.progress {
+    background-color: #1A242E;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    height: 2em;
+
+}
+
 .progress-bar {
     background-color: #41c7c7;
     border-style: solid 1px black;
+    border-radius: 1.25rem;
+
 }
 
 .bar {
