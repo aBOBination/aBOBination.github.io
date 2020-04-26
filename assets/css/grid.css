@@ -17,6 +17,9 @@ body {
         "contact contact"
         "footer footer";
 }
+header {
+    border-bottom: #1A242E 2px solid;
+}
 
 a {
     text-decoration: none;
