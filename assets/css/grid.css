@@ -69,7 +69,7 @@ header {
     display: grid;
     position: absolute;
     margin: auto;
-    width: 25em;
+    max-width: 25em;
     left: 0;
     right: 0;
     top: 50%;
@@ -96,6 +96,7 @@ header {
         "about-content about-skills";
     background-color: #cecece;
     padding: 0 5rem 5rem 5rem;
+    color: #1A242E;
 }
 
 #about-title {
@@ -106,7 +107,7 @@ header {
 
 #about-title h1 {
     font-weight: 700;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #1A242E;
 }
 
 #me {
@@ -132,7 +133,6 @@ header {
     margin-bottom: 3em;
 }
 
-
 #about-content {
     grid-area: about-content;
     text-align: center;
@@ -143,7 +143,7 @@ header {
 #about-content p {
     text-align: center;
     padding: 1em;
-    width: 20em;
+    max-width: 20em;
     margin: auto;
 }
 
@@ -216,10 +216,50 @@ footer {
 
 .progress-bar {
     background-color: #41c7c7;
-    border-style: solid 1px black;
     border-radius: 1.25rem;
 }
 
 .bar {
     margin-top: 1em;
 }
+
+@media screen and (max-width: 950px) {
+    #about {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "about-title"
+            "about-content"
+            "about-skills";
+            padding: 0;
+            padding-top: 2em;
+    }
+
+    #me {
+        background-color: #1A242E;
+        border-radius: 30%;
+        min-width: 200px;
+        min-height: 200px;
+        box-shadow: 10px 10px 8px #888888;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #about-skills {
+        background-color: #f7f7f7;
+        width: auto;
+        padding : 3em 2em;
+    }
+
+    #projects {
+        background-color: #cecece;
+    }
+
+    #contact {
+        background-color: #f7f7f7;
+    }
+
+    footer {
+        background-color: #cecece;
+    }
+  }
