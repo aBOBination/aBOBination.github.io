@@ -7,7 +7,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Source Code Pro', monospace; */
     display: grid;
-    grid-template-rows:  100vh 5vh 95vh 95vh 85vh 10vh;
+    grid-template-rows:  100vh 5vh minmax(95vh, auto) minmax(95vh, auto) 85vh 10vh;
     grid-template-columns: 100%;
     grid-template-areas:
         "hero hero"
@@ -52,6 +52,35 @@ header {
 
 #hero {
     grid-area: hero;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "hero-title";
+    text-align: center;
+    align-content: center;
+
+}
+
+#hero-title {
+    grid-area: hero-title;
+    display: grid;
+    position: absolute;
+    margin: auto;
+    width: 25em;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+}
+
+.nav-text {
+    display: inline;
+    color: white;
+}
+
+.fas {
+    color: #41c7c7;
+    vertical-align: middle;
 }
 
 #about {
@@ -80,6 +109,8 @@ header {
 #me {
     background-color: #1A242E;
     border-radius: 30%;
+    min-width: 320px;
+    min-height: 320px;
     max-width: 100%;
     max-height: 100%;
     box-shadow: 10px 10px 8px #888888;
@@ -111,7 +142,20 @@ header {
 
 #projects {
     grid-area: projects;
+    display: grid;
+    grid-template-rows:  10em auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "projects-title projects-title"
+        "projects-content projects-content";
+}
 
+#projects-title {
+    grid-area: projects-title;
+}
+
+#projects-content {
+    grid-area: projects-content;
 }
 
 #contact {
@@ -128,11 +172,16 @@ footer {
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #1A242E;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.particles-js-canvas-el {
+    height: 50%;
+    width: 100%;
 }
 
 /* Sticky Header */
@@ -143,6 +192,15 @@ footer {
     width: 100%;
   }
 
-  .sticky + .content {
+.sticky + .content {
     padding-top: 50px;
-  }
+}
+
+.progress-bar {
+    background-color: #41c7c7;
+    border-style: solid 1px black;
+}
+
+.bar {
+    margin-top: 1em;
+}
