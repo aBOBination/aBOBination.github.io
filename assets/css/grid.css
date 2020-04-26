@@ -231,8 +231,8 @@ footer {
             "about-title"
             "about-content"
             "about-skills";
-            padding: 0;
-            padding-top: 2em;
+        padding: 0;
+        padding-top: 2em;
     }
 
     #me {
@@ -243,6 +243,15 @@ footer {
         box-shadow: 10px 10px 8px #888888;
         margin-top: 2em;
         margin-bottom: 2em;
+    }
+
+
+    #about-content p {
+        text-align: center;
+        padding: 1em;
+        max-width: 80%;
+        margin: auto;
+
     }
 
     #about-skills {
