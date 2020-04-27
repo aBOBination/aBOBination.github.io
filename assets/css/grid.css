@@ -183,8 +183,8 @@ header {
         "p1 p2"
         "p3 p4"
         "p5 P5";
-    grid-gap: 3em;
-    padding: 3em;
+    grid-gap: 5em;
+    padding: 5em;
 }
 
 #projects-content div {
