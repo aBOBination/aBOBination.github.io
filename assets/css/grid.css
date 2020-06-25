@@ -111,20 +111,12 @@ header {
 }
 
 #me {
-    /* background-color: #1A242E; */
-    /* border-radius: 1.25rem; */
     min-width: 320px;
     min-height: 320px;
     max-width: 100%;
     max-height: 100%;
-    /* box-shadow: 10px 10px 8px #888888; */
     margin-bottom: 3em;
 }
-
-/* #me:hover {
-    margin-left: 2px;
-    box-shadow: 8px 8px 6px #888888;
-} */
 
 #about-content {
     grid-area: about-content;
@@ -134,9 +126,9 @@ header {
 }
 
 #about-content p {
-    text-align: center;
-    padding: 1em;
-    max-width: 20em;
+    text-align: left;
+    padding: .5em;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -147,15 +139,12 @@ header {
     width: 20em;
     margin: auto;
     padding: 20px;
-    /* background-color: #1A242E; */
-    /* border-radius: 1.25rem; */
-    /* box-shadow: 10px 10px 8px #888888; */
 }
 
-/* #about-skills:hover {
-    margin-left: 2px;
-    box-shadow: 8px 8px 6px #888888;
-} */
+.skill-icon {
+    max-width: 150px;
+    height: auto;
+}
 
 #projects {
     grid-area: projects;
