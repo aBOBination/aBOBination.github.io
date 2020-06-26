@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
-
+/*
 ul {
   position: absolute;
   text-align: center;
@@ -26,6 +26,17 @@ li {
 li > a {
   color: #f5f5f6;
   font-size: x-large;
+} */
+
+
+img {
+  border-radius: 50%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(225, 226, 225, 0.8), rgba(1, 37, 42, 0.8)), url("https://as1.ftcdn.net/jppg/02/10/21/58/500_F_210215884_eiPZhN1xUM9HaIm7Ak1j1sQqPLrvUaiy.jpg");
+  background: linear-gradient(rgba(225, 226, 225, 0.8), rgba(1, 37, 42, 0.8)), url("https://as1.ftcdn.net/jpg/02/10/21/58/500_F_210215884_eiPZhN1xUM9HaIm7Ak1j1sQqPLrvUaiy.jpg"); /* The least supported option. */
+
 }
 
 .grid-container {
@@ -44,8 +55,41 @@ li > a {
   grid-area: Header;
   background-color: #00acc1;
   color: #f5f5f6;
-  position: relative;
+  /* position: relative; */
 }
+
+.mynav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mynav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mynav a {
+  display: block;
+  font-size: 20px;
+  color: #f5f5f6;
+  text-decoration: none;
+  padding: 7px 15px;
+}
+
+.target {
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+  transition: all .35s ease-in-out;
+}
+
 
 .Main {
   grid-area: Main;
