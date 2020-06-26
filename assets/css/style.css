@@ -64,6 +64,7 @@ img {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  margin-top: 9vh;
 }
 
 .mynav li:not(:last-child) {

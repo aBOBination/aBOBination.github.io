@@ -23,10 +23,9 @@
       this.parentNode.classList.add('active');
       this.style.opacity = '1';
 
-      const width = this.getBoundingClientRect().width;
-      const height = this.getBoundingClientRect().height;
-      const left = this.getBoundingClientRect().left + window.pageXOffset;
-      const top = this.getBoundingClientRect().top + window.pageYOffset;
+      const rect = this.getBoundingClientRect();
+      const { width, height, left, top } = rect;
+
       const color = colors[Math.floor(Math.random() * colors.length)];
 
       target.style.width = `${width}px`;
