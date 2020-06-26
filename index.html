@@ -1,154 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet" />
-        <!-- Icons -->
-        <link rel="shortcut icon" href="assets/images/me320.png" />
-        <!-- Style Sheets -->
-        <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/grid.css" type="text/css" />
-        <script src="https://kit.fontawesome.com/d834cfa10d.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Mitr&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link rel="shortcut icon" href="assets/images/me320.png" />
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/d834cfa10d.js"
+      crossorigin="anonymous"
+    ></script>
 
-        <title>Robert Marks</title>
-    </head>
-    <body>
-        <header class="header" id="myHeader">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div id="hero">
-            <div id="hero-title">
-                <h1 style="color: white;">Robert Marks</h1>
-                <span class="title-text align-middle"><i class="fas fa-chevron-left fa-1x"></i> Developer <i class="fas fa-chevron-right fa-1x"></i> </span>
-            </div>
-            <div id="particles-js"></div>
-        </div>
-
-        <div id="about" class="content">
-            <div id="about-title">
-                <h1>About</h1>
-            </div>
-            <div id="about-content">
-                <img id="me" src="assets/images/me320.png" class="img-circle" />
-                <p>I am a full-stack developer currently working at Nav Technologies as a data engineer.</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aperiam tempore dolor nam voluptas dolores reiciendis provident dolorum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima quia provident qui.</p>
-                <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
-            </div>
-            <div id="about-skills">
-                <div class="text-center mb-2">
-                    <img id="front-svg" class="skill-icon" src="./assets/svg/front.svg">
-                </div>
-                <div class="text-center">
-                    <img id="back-svg" class="skill-icon" src="./assets/svg/back.svg">
-                </div>
-                <div class="text-center mt-4">
-                    <img id="data-svg" class="skill-icon" src="./assets/svg/data.svg">
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-
-        <div id="projects">
-            <div id="projects-title">
-                <h1>Projects</h1>
-            </div>
-            <div id="projects-content">
-                <div id="p1">
-                    <img src="assets/images/recette-roulette.png" alt="">
-                </div>
-                <div id="p2">
-                    <img src="assets/images/TMNT.png" alt="">
-                </div>
-                <div id="p3">
-                    <img src="assets/images/word-guess.png" alt="">
-                </div>
-                <div id="p4">
-                    TBD
-                </div>
-            </div>
-        </div>
-        <div id="contact">
-
-        </div>
-
-        <footer>
-            <h1>Footer</h1>
-        </footer>
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="assets/javascript/particles.js"></script>
-    <script src="assets/javascript/chart.js"></script>
-    <script>
-        window.onscroll = function () {
-            myFunction();
-        };
-
-        var header = document.getElementById('myHeader');
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
-            }
-        }
-
-var ctx = document.getElementById('myChart').getContext('2d');
-Chart.defaults.global.defaultFontColor = 'white';
-
-var myChart = new Chart(ctx, {
-    type: 'radar',
-    data: {
-        labels: ['HTML', 'CSS', 'JavaScript', 'Node', 'Python', 'Express', 'React', 'MongoDB','MySQL'],
-        datasets: [{
-            label: 'proficiency',
-            data: [7, 7, 7, 8, 9, 7, 6, 9, 9],
-            backgroundColor: [
-                'rgba(65, 198, 199, 0.5)',
-            ],
-            borderColor: [
-                'rgba(65, 198, 199, 1)',
-            ],
-            borderWidth: 1,
-        }]
-    },
-    options: {
-        legend: {
-            display: false
-        },
-        beginAtZero: true,
-
-        scale: {
-
-
-            ticks: {
-                display: false,
-                suggestedMin: 0,
-                suggestedMax: 10,
-                stepSize: 10
-            }
-        }
-    }
-});
-    </script>
+    <title>Robert Marks</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="Border"></div>
+      <div class="Header">
+        <ul>
+          <li><a href="default.asp">Me</a></li>
+          <li><a href="news.asp">Portfolio</a></li>
+          <li><a href="contact.asp">Contact</a></li>
+        </ul>
+      </div>
+      <div class="Main"></div>
+      <div class="Footer">
+        <h1>Header</h1>
+      </div>
+    </div>
+  </body>
+  <script src="assets/javascript/index.js"></script>
 </html>
