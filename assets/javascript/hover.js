@@ -1,4 +1,4 @@
-(function () {
+export function Hover() {
   const target = document.querySelector('.target');
   const links = document.querySelectorAll('.mynav a');
 
@@ -47,4 +47,4 @@
   }
 
   window.addEventListener('resize', resizeFunc);
-})();
+}
