@@ -1,3 +1,3 @@
-import resizeFunc from './hover.js';
+import resizeFunc from './nav.js';
 
 window.addEventListener('resize', resizeFunc);

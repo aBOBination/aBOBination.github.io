@@ -1,15 +1,17 @@
+import { loadAbout, loadWork, loadContact } from './load.js';
+
 const target = document.querySelector('.target');
-const links = document.querySelectorAll('.mynav a');
+const links = document.querySelectorAll('.mynav p');
 
 function mouseenterFunc() {
   if (!this.parentNode.classList.contains('active')) {
-    for (let i = 0; i < links.length; i++) {
-      if (links[i].parentNode.classList.contains('active')) {
-        links[i].parentNode.classList.remove('active');
+    links.forEach((link) => {
+      if (link.parentNode.classList.contains('active')) {
+        link.parentNode.classList.remove('active');
       }
-      links[i].style.opacity = '0.5';
-      links[i].style.fontWeight = '200';
-    }
+      link.style.opacity = '0.5';
+      link.style.fontWeight = '200';
+    });
 
     this.parentNode.classList.add('active');
     this.style.opacity = '1';
@@ -19,19 +21,28 @@ function mouseenterFunc() {
     const { width, height, left, top } = rect;
 
     target.style.width = `${width}px`;
-    target.style.height = `${height}px`;
+    target.style.height = `${height - 50}px`;
     target.style.left = `${left}px`;
-    target.style.top = `${top}px`;
+    target.style.top = `${top + 40}px`;
     target.style.borderColor = '#e1e2e1';
     target.style.transform = 'none';
     target.style.zIndex = 'auto';
   }
 }
 
-for (let i = 0; i < links.length; i++) {
-  links[i].addEventListener('click', (e) => e.preventDefault());
-  links[i].addEventListener('mouseenter', mouseenterFunc);
-}
+links.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (link.textContent === 'About') {
+      loadAbout();
+    } else if (link.textContent === 'Work') {
+      loadWork();
+    } else if (link.textContent === 'Contact') {
+      loadContact();
+    }
+  });
+  link.addEventListener('mouseenter', mouseenterFunc);
+});
 
 export default function resizeFunc() {
   const active = document.querySelector('.mynav li.active');
