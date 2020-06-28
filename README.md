@@ -7,3 +7,6 @@ https://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-ei
 
 ### Layout Thrashing
 https://gist.github.com/paulirish/5d52fb081b3570c81e3a
+
+### Animation
+https://css-tricks.com/different-approaches-for-creating-a-staggered-animation/

@@ -15,7 +15,9 @@ export function loadAbout() {
   name.innerHTML = 'Robert Marks';
 
   const about = document.createElement('p');
-  about.innerHTML = 'Somethin about me?';
+  const msg =
+    'Hi, I am a Full Stack Engineer with expertise in the MERN stack.<br><br>Please contact me if you would like to work together.';
+  about.innerHTML = msg;
 
   const titleIconLeft = document.createElement('i');
   titleIconLeft.classList.add('fas', 'fa-chevron-left', 'fa-1x');
