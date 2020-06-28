@@ -121,8 +121,8 @@ body {
   overflow: hidden;
   box-shadow: 10px 10px 5px grey;
   background: #00acc1;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(0, 0, 0, ), rgba(6, 172, 193, 0.8)), url("https://bit.ly/2rlzaXi");
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(6, 172, 193, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */
+  background: -webkit-linear-gradient(rgba(6, 172, 193, 0.8), rgba(0, 0, 0, )), url("../images/card-bg.png");
+  background: linear-gradient(rgba(6, 172, 193, 0.8), rgba(0, 0, 0, 0.8)), url("../images/card-bg.png"); /* The least supported option. */
 }
 
 .project-header:hover {
@@ -132,6 +132,7 @@ body {
 .project-img {
   max-width: 100%;
     height: auto;
+    padding: 2rem;
 }
 
 .project-text {

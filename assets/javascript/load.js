@@ -50,22 +50,63 @@ export function loadAbout() {
 }
 
 export function loadWork() {
+  const projects = [
+    {
+      name: 'Food Truck Frenzie',
+      img: './assets/images/food_truck_logo_blue.png',
+      github: 'https://github.com/aBOBination/bobbie-draper',
+      link: 'https://food-truck-frenzy.herokuapp.com/'
+    },
+    {
+      name: 'Recette Roulette',
+      img: './assets/images/recette.png',
+      github: 'https://github.com/MelanieBott2691/rocinante',
+      link: 'https://melaniebott2691.github.io/rocinante/'
+    },
+    {
+      name: 'Burger App',
+      img: './assets/images/burgers.png',
+      github: 'https://github.com/aBOBination/burger',
+      link: 'https://bobs-burgers-bootcamp.herokuapp.com/'
+    }
+  ];
+
   const main = document.getElementById('Main');
   main.innerHTML = '';
 
-  const row = document.createElement('div');
-  row.classList.add('row');
+  const cont = document.createElement('div');
+  cont.classList.add('project-container', 'd-flex', 'flex-wrap');
 
-  const divLeft = document.createElement('div');
-  divLeft.classList.add('col-md-12');
+  projects.forEach((project) => {
+    const proj = document.createElement('project');
+    proj.classList.add('project-header');
 
-  const img = document.createElement('img');
-  img.classList.add('me');
-  img.setAttribute('src', 'assets/images/me320.png');
+    const image = document.createElement('img');
+    image.classList.add('project-img');
+    image.setAttribute('src', project.img);
 
-  row.appendChild(divLeft);
-  divLeft.appendChild(img);
-  main.appendChild(row);
+    const section = document.createElement('section');
+    section.classList.add('project-text');
+
+    const h = document.createElement('h1');
+    h.innerText = project.name;
+
+    const a1 = document.createElement('a');
+    a1.setAttribute('href', project.github);
+
+    const a2 = document.createElement('a');
+    a2.setAttribute('href', project.link);
+
+    section.appendChild(h);
+    section.appendChild(a1);
+    section.appendChild(a2);
+
+    proj.appendChild(image);
+    proj.appendChild(section);
+
+    cont.appendChild(proj);
+  });
+  main.appendChild(cont);
 }
 
 export function loadContact() {
